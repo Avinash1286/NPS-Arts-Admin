@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/primary"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="40dp"
+        android:id="@+id/backPressedButton"
+        android:src="@drawable/proback"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userPostTitle"
+        android:layout_toEndOf="@id/backPressedButton"
+        android:layout_centerVertical="true"
+        android:text="Create Your Post"
+        android:textSize="21sp"
+        android:layout_marginStart="10dp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/postButton"
+       android:layout_marginEnd="20dp"
+        android:layout_centerVertical="true"
+        android:text="POST"
+        android:layout_alignParentEnd="true"
+        android:textSize="23sp"
+        android:textColor="#000"
+        />
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".editActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editAppbar"
+        >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:id="@+id/editToolbar"
+        app:titleTextColor="#fff"
+        app:title="Update Your Profile"
+        /></com.google.android.material.appbar.AppBarLayout>
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="#FCFBFB"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/editAppbar"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:visibility="gone"
+        android:id="@+id/editCard"
+        app:cardMaxElevation="5dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/profile"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/edituserProfileHolder"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editproTit"
+                android:layout_below="@id/edituserProfileHolder"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Upload Selfi"
+                android:textSize="15sp"
+                android:textColor="@color/primary"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/fullnameLayout"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editproTit"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_below="@id/proTit"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Fullname"
+                    android:textColor="#000"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:textColorHint="#8F8E8E"
+                    android:id="@+id/edituserFullName"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/round_corner"
+                android:layout_below="@id/fullnameLayout"
+                android:layout_marginTop="15dp"
+                android:text="Save"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:id="@+id/editsaveInfo"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

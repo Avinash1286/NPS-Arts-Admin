@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneNumberAuth">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/phonelogo"
+        android:id="@+id/phoneLogo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneLogo"
+        android:layout_marginTop="5dp"
+        android:text="Sign In"
+        android:layout_marginStart="20dp"
+        android:textSize="50sp"
+        android:textColor="#000"
+        android:id="@+id/siginHeading"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/siginHeading"
+        android:text="using your Admin phone number"
+        android:layout_marginStart="20dp"
+        android:textSize="22sp"
+        android:textColor="#000"
+        android:id="@+id/usingHeading"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:id="@+id/phoneNumberHolder"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/countryCodeHolder"
+            android:text="+977"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:textSize="18sp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneNumber"
+            android:layout_toEndOf="@id/countryCodeHolder"
+            android:padding="10dp"
+            android:hint="Phone number"
+            android:inputType="number"
+            android:textColor="#000"
+            android:maxLength="10"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/enterVerificationCode"
+        android:layout_centerVertical="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:inputType="number"
+            android:id="@+id/verificationCode"
+            android:textColor="#000"
+            android:hint="Enter verification code"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESEND"
+        android:layout_marginTop="7dp"
+        android:id="@+id/reSendCode"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:textColor="#000"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/enterVerificationCode"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0:00"
+        android:visibility="gone"
+        android:layout_marginTop="7dp"
+        android:id="@+id/showSeconds"
+        android:layout_toEndOf="@id/reSendCode"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/enterVerificationCode"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/getVerificationCodeButton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:text="Get Verification Code"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:background="@drawable/getcode"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verifyCodebutton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:text="Verify"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:background="@drawable/getcode"
+        />
+
+
+</RelativeLayout>

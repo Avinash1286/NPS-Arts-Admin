@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9E000000"
+    android:id="@+id/parentSetting"
+    android:clickable="true"
+    android:focusable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".VotingSetting">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        android:layout_centerInParent="true"
+        app:cardMaxElevation="2dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="#fff"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:cardCornerRadius="20dp"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layoutOne"
+        android:padding="5dp"
+        android:background="#EEECEC"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:id="@+id/settingLogo"
+            android:src="@drawable/settings"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setting"
+            android:id="@+id/votingSettingHeading"
+            android:layout_toEndOf="@id/settingLogo"
+            android:layout_alignTop="@id/settingLogo"
+            android:layout_marginStart="10dp"
+            android:textColor="#000000"
+
+            android:textSize="21sp"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/sendNotification"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/notificationlogo"
+            />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutTwo"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_below="@id/layoutOne">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Start Voting For:"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/startVotingForHeading"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Handwriting"
+                android:textStyle="bold"
+                android:textColor="#4D4C4C"
+                android:layout_below="@id/startVotingForHeading"
+                android:id="@+id/startHandVoting"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Essay"
+                android:textStyle="bold"
+                android:id="@+id/startEssayVoting"
+                android:layout_below="@id/startHandVoting"
+                android:textColor="#4D4C4C"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Drawing"
+                android:textStyle="bold"
+                android:textColor="#4D4C4C"
+                android:id="@+id/startDrawingVoting"
+                android:layout_below="@id/startEssayVoting"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Poem"
+                android:textColor="#4D4C4C"
+                android:textStyle="bold"
+                android:id="@+id/startPoemVoting"
+                android:textSize="20sp"
+                android:layout_below="@+id/startDrawingVoting"
+                />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/essaySwitch"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@id/startEssayVoting"
+                />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/handSwitch"
+                android:layout_alignBottom="@id/startHandVoting"
+                />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/drawingSwitch"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@id/startDrawingVoting"
+                />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/poemSwitch"
+                android:layout_alignBottom="@id/startPoemVoting"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:layout_below="@id/layoutTwo"
+            android:id="@+id/layoutThree"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addationalHeading"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:text="Additional Settings"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Show No.Of Vots"
+                android:textColor="#4D4C4C"
+                android:textStyle="bold"
+                android:id="@+id/showNoOfVotsConditionSetter"
+                android:textSize="20sp"
+                android:layout_below="@+id/addationalHeading"
+                />
+
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/noOfVotsSwitch"
+                android:layout_alignBottom="@id/showNoOfVotsConditionSetter"
+                />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/layoutThree"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="End Voting"
+            android:id="@+id/endVotingButton"
+            android:background="@drawable/end_voting_back"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

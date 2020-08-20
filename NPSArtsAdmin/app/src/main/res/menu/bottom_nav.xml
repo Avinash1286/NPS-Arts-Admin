@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+          android:icon="@drawable/finalhome"
+        android:title="Home"/>
+
+    <item android:id="@+id/postsearch"
+        android:icon="@drawable/final_search_off"
+        android:title="Search"/>
+
+    <item android:id="@+id/offlineArticles"
+        android:icon="@drawable/artslogo"
+        android:title="Articles"/>
+
+    <item android:id="@+id/postlikes"
+        android:title="Notification"
+        android:icon="@drawable/final_nav_notification_off"
+        />
+
+    <item android:id="@+id/postprofile"
+        android:icon="@drawable/final_nav_profile_off"
+        android:title="Admin"/>
+
+
+
+
+
+
+</menu>

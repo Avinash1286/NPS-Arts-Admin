@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="40dp"
+        android:id="@+id/commentBack"
+        android:src="@drawable/proback"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userCommentTitle"
+        android:layout_toEndOf="@id/commentBack"
+        android:layout_centerVertical="true"
+        android:text="Comments"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        android:textColor="#141414"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/postButton"
+        android:layout_marginEnd="20dp"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"
+        android:textColor="#DF4B1D"
+        />
+</RelativeLayout>

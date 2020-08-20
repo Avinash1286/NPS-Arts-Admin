@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:background="#F1F1F1"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    tools:context=".show_detail_wallArts">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="0dp"
+        android:id="@+id/containerForWallMagazineDetails"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/cancleIconInShowDetailWall"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+             android:layout_alignParentEnd="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:text="Avinash Yadav"
+            android:layout_toStartOf="@id/cancleIconInShowDetailWall"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:id="@+id/showAuthorname"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/showWallArtsTopic"
+            android:textSize="18sp"
+            android:text="Google Developer"
+            android:layout_toStartOf="@id/cancleIconInShowDetailWall"
+            android:layout_marginStart="10dp"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/showAuthorname"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/wallArtslikeButtonClick"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/nonelike"
+            />
+
+
+
+        <ImageView
+            android:layout_width="24dp"
+            android:id="@+id/wallArtscommentButton"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/finalcomm"
+            android:layout_toEndOf="@id/wallArtslikeButtonClick"
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="15dp"
+            android:id="@+id/wallArtsshareButton"
+            android:src="@drawable/sharelogo"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/likesText"
+            android:layout_below="@id/wallArtslikeButtonClick"
+            android:layout_marginStart="10dp"
+            android:text="0 Likes"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            />
+    </RelativeLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/showWallArts"
+    android:layout_below="@id/containerForWallMagazineDetails"
+    android:padding="10dp"
+    android:textColor="#000"
+    android:textSize="18sp"
+    />
+    </RelativeLayout>

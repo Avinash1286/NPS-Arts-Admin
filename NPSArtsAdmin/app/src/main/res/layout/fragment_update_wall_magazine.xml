@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#60000000"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UpdateWallMagazine">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        app:cardMaxElevation="2dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Updating Post"
+                android:id="@+id/updatinpostitle"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                android:layout_alignParentStart="true"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/subRel"
+                android:layout_below="@id/updatinpostitle"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:id="@+id/layoutName">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name"
+                        android:id="@+id/getUpdatedName"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/layoutName"
+                    android:id="@+id/layoutTopic">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Topic"
+                        android:id="@+id/getUpdatedTopic"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/layoutTopic"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scrollViewInUpdatePost">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:id="@+id/layoutArts">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Article"
+                            android:id="@+id/getUpdatedArts"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </ScrollView>
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardMaxElevation="2dp"
+                android:id="@+id/updateCard"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/primary">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Update"
+                    android:id="@+id/updatePost"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardMaxElevation="2dp"
+                app:cardElevation="2dp"
+                android:id="@+id/cancleCard"
+                app:cardCornerRadius="10dp"
+                android:layout_toStartOf="@id/updateCard"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/primary"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Cancel"
+                    android:id="@+id/cancelUpdate"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

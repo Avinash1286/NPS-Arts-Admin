@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:id="@+id/backPoster"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+
+
+  <RelativeLayout
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:id="@+id/textContainer"
+      android:layout_marginLeft="10dp"
+      android:layout_centerInParent="true"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="1dp"
+      android:layout_marginRight="10dp"
+      android:background="@drawable/round_corner"
+
+      >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="D"
+        android:textColor="#fff"
+        android:id="@+id/firstLetterrs"
+        android:textSize="35sp"
+        />
+
+
+  </RelativeLayout>
+
+  <TextView
+      android:layout_marginLeft="10dp"
+      android:textAlignment="center"
+      android:layout_marginBottom="2dp"
+      android:text="Digital Magazine"
+      android:layout_below="@id/textContainer"
+      android:id="@+id/nav_name"
+      android:textColor="#fff"
+      android:layout_marginTop="30dp"
+      android:textStyle="bold"
+      android:textSize="20sp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      />
+
+  <TextView
+      android:layout_marginLeft="10dp"
+      android:text="Please connect to the internet..."
+      android:textColor="#E2DFDF"
+      android:textSize="15sp"
+      android:textAlignment="center"
+      android:id="@+id/nav_e"
+      android:layout_below="@+id/nav_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      />
+
+
+
+
+</RelativeLayout>

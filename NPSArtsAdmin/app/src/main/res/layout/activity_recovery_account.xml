@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".RecoveryAccount">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="#FCFBFB"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titlletext"
+                    android:text="Recover account"
+                    android:textColor="#E91E63"
+                    android:textSize="40sp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/outline"
+                    android:padding="8dp"
+                    android:inputType="text"
+                    android:layout_below="@id/titlletext"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Enter your email"
+                    android:textColor="#000"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:textColorHint="#8F8E8E"
+                    android:id="@+id/getRecover"
+                    />
+
+
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/round_corner"
+                    android:layout_below="@id/getRecover"
+                    android:layout_marginTop="30dp"
+                    android:text="Send Link To This Email"
+                    android:paddingLeft="10dp"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:id="@+id/sendlink"
+                    />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:id="@+id/relCancle"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    tools:context=".AboutToVote">
+
+
+    <cdflynn.android.library.checkview.CheckView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+         android:id="@+id/check"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:id="@+id/headingConfirm"
+        android:textColor="#000"
+        android:text="You are about to vote \nAvinash Yadav"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="Confirm"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/headingConfirm"
+        android:layout_marginTop="15dp"
+        android:id="@+id/confirmButton"
+        android:background="@drawable/votenow_back"
+        />
+</RelativeLayout>

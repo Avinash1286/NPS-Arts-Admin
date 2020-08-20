@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/proback"
+        android:id="@+id/backPendingPostAdmin"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_filter_frames_black_24dp"
+        android:id="@+id/showHistoryButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        />
+</RelativeLayout>

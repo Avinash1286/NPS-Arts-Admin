@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backprowithoutpencil"
+    tools:context=".LogInOptions">
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/bigschool"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="5dp"
+        android:text="Welcome to NPS Arts\nAdmin"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:id="@+id/welcomeHeading"
+        />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sign In with Number"
+        android:id="@+id/logInPhoneNumber"
+        android:drawableStart="@drawable/newphonelogo"
+        android:background="@drawable/back_google_signin"
+        />
+
+</RelativeLayout>

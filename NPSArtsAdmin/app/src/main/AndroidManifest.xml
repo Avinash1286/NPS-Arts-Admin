@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nps.npsartsadmin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".OfflineData"
+        android:allowBackup="true"
+        android:icon="@mipmap/npsartsfinallogo"
+        android:label="NPS Arts Admin"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:replace="android:label">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:name=".AddAdminUser"></activity>
+        <activity android:name=".ShowMessagePost" />
+        <activity android:name=".ShowPostImage" />
+        <activity android:name=".DigitalComplainBox" />
+        <activity android:name=".PhoneNumberAuth" />
+        <activity android:name=".ShowVotingImage" />
+        <activity android:name=".QuizHistory" />
+        <activity android:name=".VotingManagement" />
+        <activity android:name=".ReadMoreArtsAndEssay" />
+        <activity android:name=".LogInOptions" />
+        <activity android:name=".ShowPendingPosts" />
+        <activity android:name=".PendingPostVerification" />
+        <activity android:name=".PostingDrawing" />
+        <activity android:name=".WelcomeScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".editActivity" />
+        <activity android:name=".ShowReports" />
+        <activity android:name=".GiggleItVerification" />
+        <activity android:name=".VotingSection" />
+        <activity
+            android:name=".CreatingVoting"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AdminControll" />
+        <activity android:name=".ShowWallMagazineDetails" />
+        <activity android:name=".RandomClass" />
+        <activity
+            android:name=".ShowCreativeHandsFullImage"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CreateQuizCompetation" />
+        <activity android:name=".PostingCreativeHands" />
+        <activity android:name=".PostingWallMagazine" />
+        <activity android:name=".ShowFavourate" />
+        <activity android:name=".ShowProOfLCandS" />
+        <activity android:name=".GetUserInfo" />
+        <activity android:name=".ShowAlluserProfile" />
+        <activity android:name=".PostArticlesActivity" />
+        <activity android:name=".PostDetails" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HeartActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SearchPeople"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ShowPost"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RecoveryAccount" />
+        <activity android:name=".LogIn" />
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/mininotify" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/notificationColor" />
+
+        <service
+            android:name=".FirebaaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+    </application>
+
+</manifest>

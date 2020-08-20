@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/proback"
+        android:id="@+id/backPendingPostAdmin"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digital Complain Box"
+        android:textSize="22sp"
+        android:textColor="@color/textcolor"
+        android:id="@+id/pendingpostAdminHeading"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowMessagePost">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showMessagePost">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:id="@+id/showMessageTool"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/showMessagePost"
+        android:layout_height="wrap_content"
+        android:id="@+id/backMessage"
+        android:paddingStart="5dp"
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/containMessagesInPost"
+        android:padding="10dp"
+        android:ellipsize="end"
+        android:maxLength="500"
+
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:maxHeight="400dp"
+        />
+
+    </RelativeLayout>
+</RelativeLayout>

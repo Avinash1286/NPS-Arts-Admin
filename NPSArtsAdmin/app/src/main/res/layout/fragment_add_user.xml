@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#4B000000"
+    android:id="@+id/cancleFrag"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_height="match_parent"
+    tools:context=".AddUserFragment">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardElevation="2dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#fff">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Number"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:id="@+id/addNumberHeading"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addNumberHeading"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="+977"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/countryCode"
+                android:textColor="#000"
+                android:textSize="22sp"
+                android:padding="5dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addNumberHeading"
+                android:layout_toEndOf="@id/countryCode"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:layout_marginEnd="10dp"
+                android:maxLines="1"
+                android:id="@+id/numberHolder"
+                android:maxLength="10"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/numberHolder"
+                android:layout_marginTop="20dp"
+                android:textColor="#000"
+                android:text="Add Number"
+                android:padding="10dp"
+                android:id="@+id/addNumberButton"
+                android:shadowColor="#000"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:background="#fff"
+                android:layout_marginBottom="20dp"
+                />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

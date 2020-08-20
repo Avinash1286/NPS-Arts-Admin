@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="#fff"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="4dp"
+        android:layout_height="200dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"
+            android:id="@+id/containCreativeHandsImage"
+            />
+        <TextView
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="#000"
+            android:id="@+id/conatinArtistName"
+            android:background="#51D8D1D5"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

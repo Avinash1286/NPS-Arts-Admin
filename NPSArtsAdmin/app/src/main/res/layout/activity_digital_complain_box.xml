@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6D5D5"
+    tools:context=".DigitalComplainBox">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/digitalComplainBoxAppbar"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/digitalTool"
+            android:background="#fff"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/commentOnlineRecycle"
+        android:layout_above="@+id/containCommentLayout"
+        android:layout_below="@+id/digitalComplainBoxAppbar"
+        android:layout_height="match_parent"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="#fff"
+        android:id="@+id/containCommentLayout"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/showNoComp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/noreportsLogo"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/nocomplains"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noreportsLogo"
+            android:layout_centerHorizontal="true"
+            android:text="No Complaint"
+            android:textColor="#686767"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+
+    <com.github.loadingview.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_centerInParent="true"
+        app:lv_duration="30"
+        app:lv_end_color="#2196F3"
+        app:lv_external_radius="24dp"
+        app:lv_internal_radius="4dp"
+        app:lv_start_color="#2196F3" />
+
+
+
+</RelativeLayout>

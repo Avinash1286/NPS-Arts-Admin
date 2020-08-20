@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ShowReports">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/reportappbar"
+        android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="#fff"
+        android:background="@color/primary"
+        android:id="@+id/showReportsTool"
+        app:title="Reported Posts"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          android:id="@+id/refreshshowpost"
+        android:layout_below="@id/reportappbar">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycleShowReports"
+    />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/noInternetHolder"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:id="@+id/nointernetimageholder"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/nointerneimage"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_below="@id/nointernetimageholder"
+            android:textStyle="bold"
+            android:id="@+id/showNOInternetMessage"
+            android:textColor="#969393"
+            android:text="No Internet Connection"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/showNoReports"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/noreportsLogo"
+        android:src="@drawable/noreports"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noreportsLogo"
+        android:layout_centerHorizontal="true"
+        android:text="No Reports"
+        android:textColor="#686767"
+        android:textSize="18sp"
+        />
+    </RelativeLayout>
+    <com.github.loadingview.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_centerInParent="true"
+        app:lv_duration="30"
+        app:lv_end_color="#2196F3"
+        app:lv_external_radius="24dp"
+        app:lv_internal_radius="4dp"
+        app:lv_start_color="#2196F3" />
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    app:cardElevation="1dp"
+    app:cardMaxElevation="1dp"
+    app:cardBackgroundColor="#fff"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:civ_border="true"
+            android:id="@+id/onlineCommentProfile"
+            android:layout_margin="10dp"
+            android:src="@drawable/profile"
+            app:civ_border_width="2dp"
+            />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/whoCommented"
+               android:layout_toEndOf="@id/onlineCommentProfile"
+               android:layout_marginTop="10dp"
+               android:text="UserName"
+               android:textStyle="bold"
+               android:textColor="#000"
+               android:textSize="15sp"
+               android:layout_marginStart="5dp"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toStartOf="@id/deleteComment"
+               android:id="@+id/commentTextonline"
+               android:layout_below="@id/whoCommented"
+               android:layout_marginStart="5dp"
+               android:layout_marginEnd="10dp"
+               android:layout_marginBottom="5dp"
+               android:text="wow this is realy awesome and its great"
+               android:textSize="12sp"
+               android:textColor="#000"
+               android:layout_toEndOf="@id/onlineCommentProfile"
+               />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:id="@+id/deleteComment"
+            android:src="@drawable/dotoption"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

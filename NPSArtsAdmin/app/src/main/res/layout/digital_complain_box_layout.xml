@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    app:cardElevation="2dp"
+    app:cardMaxElevation="2dp"
+    app:cardBackgroundColor="#fff"
+    app:cardCornerRadius="15dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/complainCard">
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:src="@drawable/anonymous"
+        android:layout_height="40dp"
+        android:id="@+id/anonymousPic"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/anonymousPic"
+        android:layout_alignBottom="@id/anonymousPic"
+        android:layout_toEndOf="@id/anonymousPic"
+        android:text="Anonymous"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="20sp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/anonymousPic"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/complainText"
+            android:layout_marginEnd="10dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginBottom="20dp"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

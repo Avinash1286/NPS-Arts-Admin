@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#fff"
+    app:cardMaxElevation="2dp"
+    app:cardElevation="2dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstLayout"
+            >
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:civ_border="true"
+                app:civ_border_color="#17578A"
+                app:civ_border_width="2dp"
+                android:layout_margin="10dp"
+                android:id="@+id/pendinguserProInMain"
+                android:src="@drawable/userlogo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:id="@+id/pendinguserNameHere"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_toEndOf="@id/pendinguserProInMain"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pendingdateandtime"
+                android:textColor="#000"
+                android:textSize="9sp"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="5dp"
+                android:layout_below="@id/pendinguserNameHere"
+                android:layout_toEndOf="@id/pendinguserProInMain"
+                />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:id="@+id/pendingverified"
+                android:visibility="gone"
+                android:layout_alignTop="@id/pendinguserNameHere"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_verified_user_black_24dp"
+                android:layout_toEndOf="@id/pendinguserNameHere"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pendingdateandtime"
+                android:layout_toEndOf="@id/pendinguserProInMain"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="1dp"
+                android:id="@+id/pendinguserHeadingHere"
+                android:textColor="#000"
+                /></RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/secondLayout"
+            android:layout_below="@id/firstLayout"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="500dp"
+                android:id="@+id/pendingshowCreativePost"
+                />
+         </RelativeLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/thirdLayout"
+            android:layout_below="@id/secondLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Verify"
+                android:background="@drawable/verification_background"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:id="@+id/verifyButton"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Delete"
+                android:textColor="#fff"
+                android:background="@drawable/delete_background"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:id="@+id/deleteButton"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

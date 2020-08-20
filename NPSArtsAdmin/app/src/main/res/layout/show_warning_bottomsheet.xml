@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Warning"
+        android:textSize="25sp"
+        android:background="#F7F5F5"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:id="@+id/warningHeading"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/warningHeading"
+        android:textSize="15sp"
+        android:id="@+id/messagewarning"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:text="This Particular user can perform the following operations:\n1. Can Post and modify wall magazine.\n2. Can Post and modify creative hands."
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messagewarning"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancle"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:id="@+id/cancleButton"
+            android:background="@drawable/warning_bottom_layoutone"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grant"
+            android:id="@+id/grantButton"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:background="@drawable/warning_bottomsheettwo"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

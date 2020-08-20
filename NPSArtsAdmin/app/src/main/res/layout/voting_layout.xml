@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="4dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:transitionName="imageTrans"
+                android:layout_margin="10dp"
+                android:id="@+id/manageHandImage"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/manageHandImage"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:transitionName="nameTrans"
+                android:id="@+id/manageHoldeName"
+                android:text="Avinash Yadav"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/manageHoldeName"
+                android:layout_toEndOf="@id/manageHandImage"
+                android:layout_marginStart="10dp"
+                android:textSize="70sp"
+                android:id="@+id/showNOOfVots"
+                android:textColor="#000"
+                 android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/showNOOfVots"
+                android:layout_below="@id/manageHoldeName"
+                android:layout_marginStart="50dp"
+                android:text="Vote Now"
+                android:padding="10dp"
+                android:id="@+id/voteNowButton"
+                android:textColor="#fff"
+                android:background="@drawable/votenow_back"
+                android:textSize="20dp"
+                android:layout_marginTop="40dp"
+                />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

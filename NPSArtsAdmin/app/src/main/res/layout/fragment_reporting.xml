@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/onBackRel"
+    android:background="#34000000"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ReportingFragment">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#fff"
+        app:cardElevation="2dp"
+        app:cardMaxElevation="2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Reporting an Article"
+                android:textSize="20sp"
+                android:textColor="@color/textcolor"
+                android:id="@+id/reportingHeading"
+                android:padding="10dp"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reportingHeading"
+                android:id="@+id/reasonLayout"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/getReason"
+                    android:hint="Reason to report"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send Report"
+                android:layout_below="@id/reasonLayout"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:padding="10dp"
+                android:id="@+id/sendReport"
+                android:background="@color/primary"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
